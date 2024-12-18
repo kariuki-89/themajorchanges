@@ -907,7 +907,7 @@ async function cdn_signUp(email,password,name) {
       setCookie("agentmultiagentwebtky",user.uid,3)
       setCookie("agentmultiagentwebide",user.uid,3)
       //cdn_listenForSnapshots()
-      homepageRedirect("/dashboard.html")
+      homepageRedirect("/dashboard")
       return("User signed up:", userCredential.user);
       }
       listenForSnapshots(); // Start Firestore listener after signup
